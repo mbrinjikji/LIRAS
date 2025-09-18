@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import glob
 from scipy import ndimage
 
-def binosplit(pathname):
+def dualsplit(pathname):
     
     pathname = pathname
 
