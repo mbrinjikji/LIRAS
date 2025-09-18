@@ -1,1 +1,14 @@
-
+numpy
+astropy
+matplotlib
+os
+warnings
+scipy
+dewarp
+photutils
+itertools
+glob
+configparser
+sep
+IPython 
+jupyter
