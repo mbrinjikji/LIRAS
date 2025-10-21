@@ -12,3 +12,9 @@ configparser
 sep
 IPython 
 jupyter
+math
+lmfit
+pyklip
+multiprocessing
+corner
+pandas
