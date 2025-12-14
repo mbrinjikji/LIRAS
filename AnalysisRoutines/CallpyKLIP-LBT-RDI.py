@@ -133,7 +133,7 @@ def preppsflib(star_center,mode,prefix,ann,subs,numbs,make_corr,targetname,outpa
     parallelized.klip_dataset(stardataset,mode=mode,outputdir=outpath,fileprefix=objectname+prefix,annuli=ann,subsections=subs,movement=0,numbasis=numbs,numthreads=8,minrot=0,calibrate_flux=False,aligned_center=[klipxcen,klipycen],annuli_spacing="log",maxnumbasis=100,corr_smooth=1,spectrum=None,psf_library=psflib,highpass=False,lite=False,save_aligned=False,restored_aligned=None,dtype=None,algo="klip",time_collapse="median",wv_collapse="median")
 
 
-def runeachobject(outpath,datapsf,corr_path,star_center,mode,prefix,ann,subs,numbs):
+def pyklip_RDI(outpath,datapsf,corr_path,star_center,mode,prefix,ann,subs,numbs):
     #path where you want the output images from klip to go
     outpath = outpath
     #path where the padded fits files are stored
@@ -171,4 +171,4 @@ def runeachobject(outpath,datapsf,corr_path,star_center,mode,prefix,ann,subs,num
             count += 1
 
 # if __name__ == '__main__':
-#     runeachobject()
+#     pyklip_RDI()
