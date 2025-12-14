@@ -16,7 +16,7 @@ def alignandstack(pathforalign,pathforstack,finalimage,thresholdvalue):
     
     def getCoo(thresholdvalue,scidat):
         '''this step finds the star coordinates. it can be finicky so i try and get the thresh/minarea as close to the value of the star as possible'''
-        data = scidat.byteswap(True).newbyteorder()
+        data = data = scidat.byteswap(True).view(scidat.dtype.newbyteorder())
         # data[data>1500] = 1.
         bkg = sep.Background(data)
         print(bkg.globalrms)
